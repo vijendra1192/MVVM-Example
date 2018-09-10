@@ -14,6 +14,8 @@
 		A043D941213BA8B5009E0BD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A043D940213BA8B5009E0BD6 /* Assets.xcassets */; };
 		A043D944213BA8B5009E0BD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A043D942213BA8B5009E0BD6 /* LaunchScreen.storyboard */; };
 		A043D94F213BA8B5009E0BD6 /* MVVM_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A043D94E213BA8B5009E0BD6 /* MVVM_ExampleTests.swift */; };
+		A043D95A213BACA9009E0BD6 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A043D959213BACA9009E0BD6 /* LoginModel.swift */; };
+		A043D95C213BACB9009E0BD6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A043D95B213BACB9009E0BD6 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		A043D94A213BA8B5009E0BD6 /* MVVM ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A043D94E213BA8B5009E0BD6 /* MVVM_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_ExampleTests.swift; sourceTree = "<group>"; };
 		A043D950213BA8B5009E0BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A043D959213BACA9009E0BD6 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		A043D95B213BACB9009E0BD6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 			children = (
 				A043D936213BA8B2009E0BD6 /* AppDelegate.swift */,
 				A043D938213BA8B2009E0BD6 /* ViewController.swift */,
+				A043D959213BACA9009E0BD6 /* LoginModel.swift */,
+				A043D95B213BACB9009E0BD6 /* LoginViewModel.swift */,
 				A043D93A213BA8B2009E0BD6 /* Main.storyboard */,
 				A043D940213BA8B5009E0BD6 /* Assets.xcassets */,
 				A043D942213BA8B5009E0BD6 /* LaunchScreen.storyboard */,
@@ -201,7 +207,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A043D93F213BA8B2009E0BD6 /* MVVM_Example.xcdatamodeld in Sources */,
+				A043D95A213BACA9009E0BD6 /* LoginModel.swift in Sources */,
 				A043D939213BA8B2009E0BD6 /* ViewController.swift in Sources */,
+				A043D95C213BACB9009E0BD6 /* LoginViewModel.swift in Sources */,
 				A043D937213BA8B2009E0BD6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,6 +371,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XPBV485VNW;
 				INFOPLIST_FILE = "MVVM Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -380,6 +389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XPBV485VNW;
 				INFOPLIST_FILE = "MVVM Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
