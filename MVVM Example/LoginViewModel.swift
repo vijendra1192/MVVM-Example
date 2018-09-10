@@ -14,7 +14,9 @@ class LoginViewModel : NSObject
     var password : String?
     var model_ : ModelInfo! = ModelInfo()
     var responseDic : Dictionary<String, Any>?
-    var loginData : LoginDataStruct!
+    var loginData : LoginDataStruct?
+    var saveResData = Array<Any>()
+    
     
     init(mobileNo:String,password:String) {
         self.name = mobileNo
@@ -35,6 +37,7 @@ class LoginViewModel : NSObject
                 completionBlock(false)
                 self.responseDic = resDic
             }
+            self.saveDictValue()
         })
     }
     
@@ -43,9 +46,11 @@ class LoginViewModel : NSObject
         
         if responseDic!["Status"] as! Bool == true
         {
-            loginData.mobileNo = responseDic!["mobileNo"] as! String
-            loginData.password = responseDic!["password"] as! String
-            loginData.status = responseDic!["Status"] as! Bool
+            loginData?.mobileNo = responseDic!["mobileNo"] as? String
+            loginData?.password = responseDic!["password"] as? String
+            loginData?.status = responseDic!["Status"] as? Bool
+            
+            saveResData.append(loginData)
         }
         else
         {

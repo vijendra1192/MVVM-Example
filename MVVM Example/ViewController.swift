@@ -9,9 +9,9 @@
 import UIKit
 
 struct LoginDataStruct {
-    var mobileNo : String
-    var password : String
-    var status : Bool
+    var mobileNo : String?
+    var password : String?
+    var status : Bool?
 }
 
 
@@ -44,6 +44,8 @@ class ViewController: UIViewController {
     
     @IBAction func fetchPressed(_ sender: Any)
     {
-        print("fetch data \(data_.mobileNo)")
+        let model = LoginViewModel(mobileNo: "1", password: "1")
+        
+        print("fetch data \(model.saveResData)")
     }
 }
