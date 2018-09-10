@@ -8,10 +8,20 @@
 
 import UIKit
 
+struct LoginDataStruct {
+    var mobileNo : String
+    var password : String
+    var status : Bool
+}
+
+
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtMobileNo: UITextField!
+    var data_ : LoginDataStruct!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,4 +42,8 @@ class ViewController: UIViewController {
         {}
     }
     
+    @IBAction func fetchPressed(_ sender: Any)
+    {
+        print("fetch data \(data_.mobileNo)")
+    }
 }

@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="agB-yb-xIH">
-                                <rect key="frame" x="49" y="278.5" width="278" height="110"/>
+                                <rect key="frame" x="49" y="258.5" width="278" height="150"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile no                                                   " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="grR-p1-pIn">
                                         <rect key="frame" x="0.0" y="0.0" width="278" height="30"/>
@@ -39,6 +39,13 @@
                                         <state key="normal" title="Login Pressed"/>
                                         <connections>
                                             <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p0c-dH-jH4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ijl-TS-c5x">
+                                        <rect key="frame" x="0.0" y="120" width="278" height="30"/>
+                                        <state key="normal" title="Fetch Data"/>
+                                        <connections>
+                                            <action selector="fetchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BMc-Bt-dde"/>
                                         </connections>
                                     </button>
                                 </subviews>
